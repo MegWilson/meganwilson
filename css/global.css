@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab';
+/* ANIMATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.floating {
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  margin-left: 0.5%;
+  margin-top: 1.0%; }
+
+@-webkit-keyframes Floatingx {
+  from {
+    -webkit-transform: translate(0, 0px); }
+  65% {
+    -webkit-transform: translate(0, 15px); }
+  to {
+    -webkit-transform: translate(0, 0px); } }
+
+@-moz-keyframes Floating {
+  from {
+    -moz-transform: translate(0, 0px); }
+  65% {
+    -moz-transform: translate(0, 15px); }
+  to {
+    -moz-transform: translate(0, 0px); } }
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  color: #212121;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0.8rem;
+  flex-flow: row;
+  text-align: center;
+  padding: 5%; }
+
+/* NAVIGATION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+  flex: 1;
+  background-color: #fff;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  nav #logo {
+    white-space: nowrap;
+    font-family: "Open Sans", sans-serif;
+    color: #212121;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto;
+    top: 0;
+    padding: 5%; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 3%;
+    overflow: hidden;
+    background-color: #fff; }
+  nav li {
+    text-align: center; }
+  nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #bdbdbd;
+    transition: 0.3s;
+    font-size: 0.7rem; }
+  nav a:hover {
+    color: #ff917a; }
+
+/* BASE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box; }
+
+body {
+  font: 1em "Open Sans", sans-serif;
+  color: #212121;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  background-color: #fff;
+  overflow-x: hidden;
+  height: 100%; }
+
+a {
+  color: #fe6b88; }
+
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.col {
+  flex: 1 0 auto;
+  min-width: 0; }
+
+/* PAGES - page-specific styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* INDEX
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#container {
+  margin-top: 30%; }
+
+#intro-container {
+  flex: 1;
+  height: 500px; }
+  #intro-container .row {
+    flex-wrap: column wrap; }
+  #intro-container .col {
+    position: fixed;
+    z-index: -1; }
+  #intro-container #avatar-container {
+    margin: 5%;
+    padding: 3% 0 0 0; }
+  #intro-container #intro-text {
+    margin: 0;
+    margin-top: 109%;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: 900;
+    position: absolute; }
+
+/* ABOUT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.row#about {
+  padding: 40%;
+  background-color: #3e3e3e; }
+  .row#about .col {
+    flex: 1; }
+  .row#about #title {
+    background-color: red; }
+  .row#about #hey {
+    background-color: green; }
+
+/* WORK
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#work {
+  padding: 40%;
+  background-color: #d3d3d3; }
+
+/* CONTACT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#contact {
+  padding: 40%;
+  background-color: #d6e6e6; }

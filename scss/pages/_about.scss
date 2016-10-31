@@ -1,0 +1,16 @@
+/* ABOUT
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.row#about {
+    padding: 40%;
+    background-color: #3e3e3e;
+    .col {
+        flex: 1;
+    }
+    #title {
+        background-color: red;
+    }
+    #hey {
+        background-color: green;
+    }
+}

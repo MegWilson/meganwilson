@@ -1,0 +1,33 @@
+    * {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font: 1.0em $font-primary;
+        color: $primary-color;
+        line-height: 1.2em;
+        letter-spacing: 0.02em;
+        background-color: #fff;
+        overflow-x: hidden;
+        height: 100%;
+    }
+    
+    a {
+        color: $secondary-color;
+    }
+    
+    .row {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .col {
+        flex: 1 0 auto;
+        min-width: 0;
+    }

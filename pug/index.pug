@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+		title Megan Wilson
+
+		meta(name='description', content='')
+
+		link(href='../css/global.css', rel='stylesheet')
+body
+	nav
+		a#logo(href='index.html') MEGAN WILSON
+		ul.row
+			li.col: a(href='index.html') Home
+			li.col: a(href='about.html') About
+			li.col: a(href='work.html') Work
+			li.col: a(href='contact.html') Contact
+	#container
+		#intro-container
+			.row#avatar-container
+				.col
+					img(src='../svg/me.svg', id='avatar', class='floating')
+			.row#intro-text
+				.col
+					p Hi! I am Megan Wilson. I am a junior developer, designer, and illustrator. You can read about me #[a(href='about.html') here], see my work #[a(href='work.html') here], and contact me #[a(href='contact.html') here].
+		.row#about
+			.col#title
+				h1 About Me
+			.col#hey
+				p heyged
+		.row#work
+			.col#title
+				h1 Work
+			.col
+				p heyged
+		.row#contact
+			.col#title
+				h1 Contact
+			.col
+				p hey
+	footer#footer
+		div © 2016 MEGAN WILSON. ALL RIGHTS RESERVED.
+	script(src='../scripts/menu.js')

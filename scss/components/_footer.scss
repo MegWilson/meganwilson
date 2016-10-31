@@ -1,0 +1,12 @@
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+    color: $primary-color;
+    @include flexbox;
+    font-size: 0.8rem;
+    flex-flow: row;
+    text-align: center;
+    padding: 5%;
+
+}
